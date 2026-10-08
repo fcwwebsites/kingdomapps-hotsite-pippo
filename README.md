@@ -8,7 +8,8 @@ Public preview gate for **Pizzas & Esfihas Pippo** (Kingdomapps). A PIN-protecte
 /
   index.html      # preview gate
   gate.css / gate.js
-  v1/ v2/ v3/     # static hotsites (HTML/CSS/JS + assets/)
+  assets/         # shared base.css, site.js, skin-a/b/c.css, img/, CREDITS.md
+  v1/ v2/ v3/     # same institutional markup + behavior, 3 visual skins
 ```
 
 ## GitHub Pages

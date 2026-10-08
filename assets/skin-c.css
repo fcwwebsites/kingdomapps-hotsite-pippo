@@ -1,0 +1,66 @@
+/* Skin C — Trattoria calorosa · refs: Famiglia Mancini (blocos de cor fortes, amarelo/vermelho, alegria),
+   Cucina Pizza Trattoria (títulos condensados em caixa-alta sobre foto, bloco verde-escuro, split imagem/texto, papel #fef6ed),
+   Quinoa Restobar (fundo quente texturizado, caixa-alta serifada, fotos emolduradas, botões laranja) */
+:root{--bg:#fff7ec;--surface:#fff;--ink:#2a1f1a;--muted:#6e5a4c;--line:#ecdcc6;--accent:var(--brand);--accent-ink:#fff;
+  --font-display:"Oswald",Impact,sans-serif;--font-body:"Nunito Sans",system-ui,sans-serif;--display-weight:600;--font-btn:"Oswald",sans-serif;
+  --btn-radius:10px;--btn-track:.06em;--btn-case:uppercase;--btn-size:1rem;--wa-bg:#1faa59;--wa-ink:#fff;--wa-hover:#178c49;
+  --sec-pad:80px;--card-radius:14px;--img-radius:14px;--tab-on-bg:var(--brand);--tab-on-ink:#fff;--amb-overlay:rgba(42,31,26,.55);--amb-menu-h:300px;
+  --header-bg:var(--brand-ink);--header-ink:#fff;--nav-mobile-bg:#fff7ec;--logo-radius:12px;--price:var(--brand)}
+h1,h2,h3{text-transform:uppercase;letter-spacing:.01em}
+h2{font-size:clamp(2.1rem,5vw,3.4rem)}
+.kicker{font-weight:800;color:var(--brand);letter-spacing:.14em}
+.site-header{box-shadow:0 4px 0 var(--brand2)}
+.site-nav a{font-family:var(--font-display);text-transform:uppercase;letter-spacing:.08em;font-size:.95rem}
+.brand-word{text-transform:uppercase;font-size:1.5rem}
+/* hero: foto cheia, título condensado grande embaixo à esquerda (Cucina "NOSSA CASA") */
+.hero{min-height:min(84vh,820px);display:flex;align-items:flex-end;color:#fff}
+.hero-media{position:absolute;inset:0}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(30,20,14,.82),rgba(30,20,14,.35) 70%),linear-gradient(0deg,rgba(30,20,14,.6),transparent 50%)}
+.hero-inner{position:relative;z-index:1;padding-top:120px;padding-bottom:64px}
+.hero-copy{max-width:720px}
+.hero h1{font-size:clamp(2.8rem,8vw,5.8rem);line-height:.98}
+.hero .eyebrow{display:inline-block;background:var(--brand2);color:var(--ink);font-weight:800;letter-spacing:.12em;padding:.45em .8em;border-radius:6px}
+.hero .lead{color:rgba(255,255,255,.9);font-size:1.12rem}
+.hero .btn-ghost{color:#fff;border-width:2px}
+.chips li{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.35);font-weight:700}
+/* sobre: split imagem/texto em bloco de papel */
+.sobre{background:var(--bg)}
+.sobre-copy .apoio{display:inline-block;background:var(--brand2);color:var(--ink);padding:.5em .9em;border-radius:8px}
+.gallery{grid-template-columns:repeat(2,1fr);gap:14px}
+@media (min-width:900px){.sobre-grid{grid-template-columns:1.1fr 1fr}.sobre-copy{order:2}.gallery{order:1}}
+.g-item{border:6px solid #fff;box-shadow:0 10px 24px rgba(42,31,26,.14)}
+.g-item:nth-child(odd){transform:rotate(-1.2deg)}.g-item:nth-child(even){transform:rotate(1.2deg)}
+/* destaques: bloco de cor da marca (Mancini) */
+.destaques{background:var(--brand2);color:var(--ink)}
+.destaques .kicker{color:var(--ink)}
+.feat{background:#fff;padding:26px 22px;border-radius:14px;box-shadow:0 6px 0 rgba(42,31,26,.12)}
+.feat-n{font-size:2.6rem;line-height:1;color:var(--brand)}
+.feat p{color:var(--muted)}
+/* cardápio */
+.menu-head h2,.menu-head .lead,.menu-head .kicker{color:#fff}
+.menu-head{padding-top:10px}
+.menu-tabs [role=tab]{background:#fff;font-family:var(--font-display);text-transform:uppercase;letter-spacing:.05em;border:2px solid var(--line);border-radius:99px}
+.menu-panel{box-shadow:0 12px 30px rgba(42,31,26,.12);border:0}
+.mi-name{font-weight:800}
+.mi-price{background:color-mix(in srgb,var(--brand) 12%,#fff);padding:.15em .6em;border-radius:99px;align-self:start}
+.menu-cat{color:var(--brand)}
+/* entrega */
+.entrega{background:#fff}
+.steps-box{background:var(--bg);border:2px dashed var(--line)}
+.steps li::before{background:var(--brand)}
+/* avaliar: bloco escuro (verde Cucina → tom escuro da marca) */
+.avaliar{background:var(--brand-ink);color:#fff}
+.avaliar h2{color:var(--brand2)}
+.btn-review{border-radius:10px;font-family:var(--font-display);text-transform:uppercase;letter-spacing:.06em}
+/* contato */
+.ct-card{border:0;box-shadow:0 8px 22px rgba(42,31,26,.08)}
+.ct-card h3{color:var(--brand)}
+/* cta */
+.cta-final{padding:110px 0}
+.amb-cta::after{background:linear-gradient(0deg,rgba(30,20,14,.78),rgba(30,20,14,.5))}
+.cta-final h2{font-size:clamp(2.6rem,7vw,4.6rem);color:#fff}
+.cta-final .btn-ghost{color:#fff;border-width:2px}
+/* footer */
+.site-footer{background:var(--brand);color:#fff}
+.site-footer .brand-logo{border:3px solid #fff}
+.wa-float{background:#1faa59;color:#fff;font-family:var(--font-display);text-transform:uppercase;letter-spacing:.06em}
