@@ -318,3 +318,13 @@ section { padding: 2.75rem 0; }
 @media (min-width: 640px) {
   .highlight-list { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* Review CTA (Avaliar no Google) */
+.review-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1rem; margin-top: 1rem;
+  background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius); padding: 1rem 1.15rem; }
+.review-score { color: var(--muted); font-size: 0.95rem; }
+.review-score strong { color: var(--text); }
+.g-ico { width: 16px; height: 16px; color: var(--accent); }
+.footer-review { margin-top: 0.5rem; }
+.footer-review a { color: var(--accent); font-weight: 650; }
+.footer-review a:hover { text-decoration: underline; }
